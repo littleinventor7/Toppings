@@ -1,0 +1,81 @@
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  body {
+    background: #1ebcfa;
+background: linear-gradient(90deg, rgba(30, 188, 250, 1) 0%, rgba(237, 83, 83, 1) 100%);
+
+    opacity: 1;
+  }
+  img {
+    
+    transition: 0.2s;
+    display: block;
+   margin-left: 100px;
+    width: 40%;
+  }
+  img:hover {
+    transform: rotate(360deg);
+  }
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+  a {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 350px;
+    width : 40%;
+  }
+  
+p {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 25p;
+    text-shadow: 2px 2px 5px rgb(116, 116, 116);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  p {
+    color: white;
+}
+}
+#w {
+    text-align: left;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  padding: 5px;
+}
+.container > div.header {
+  background-color: aliceblue;
+  grid-area: header;
+  text-align: center;
+}
+.container > div.main-content {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.fotter {
+  
+  grid-area: fotter;
+  text-align: center;
+}
